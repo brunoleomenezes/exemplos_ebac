@@ -1,0 +1,20 @@
+algoritmo AcordarPelaManha
+
+// Variáveis
+var
+    hora_atual, hora_despertar: inteiro
+inicio
+
+    // Usuário deve inserir a hora atual e a hora do despertar
+    escreva("Informe a hora atual (formato 24h, somente a hora): ")
+    leia(hora_atual)
+    escreva("Informe a hora que deseja acordar (formato 24h, somente a hora): ")
+    leia(hora_despertar)
+
+    // Verifica se é a hora de acordar
+    se hora_atual >= hora_despertar entao
+        escreva("Hora de acordar!")
+    senao
+        escreva("Ainda não é hora de acordar.")
+    fimse
+fimalgoritmo
